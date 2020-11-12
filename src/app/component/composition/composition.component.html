@@ -1,0 +1,33 @@
+<div class="content">
+	<div class="champ_list">
+		<div class="champ_show" *ngFor ="let item of [1,2,3,4,5]">
+			<h2>Rango {{item}}</h2>	
+			<ul>
+				<li *ngFor="let champ of getSubArrayCost(champions,item)" ><img   src="assets/champions/{{champ.championId}}.png" (click)="selectedChamp(champ)" [ngClass]="{'border_gray':item===1,'border_green':item===2,'border_blue':item===3,'border_purple':item===4,'border_gold':item===5}"></li>
+			</ul>
+		</div>
+		
+	</div>	
+	<div class="champ_selection">
+		<div class="show_selection">
+			<h2>Equipo</h2>
+			<ul *ngIf="selected">
+				<li *ngFor="let champ_selected of selected"> <img src="assets/champions/{{champ_selected.championId}}.png" [ngClass]="{'border_gray':champ_selected.cost===1,'border_green':champ_selected.cost===2,'border_blue':champ_selected.cost===3,'border_purple':champ_selected.cost===4,'border_gold':champ_selected.cost===5}" (click)="deselectedChamp(champ_selected)"></li>
+			</ul>
+		</div>
+		<div *ngIf="selected" class="show_traits_selected">
+			<ul>
+				<li *ngFor="let trait_tuple of traits_selected | keyvalue"> 
+					<div class="traits_show" (mouseover)="over(trait_tuple.value[0])" (mouseout)="out()">
+						<img src="assets/traits/{{trait_tuple.value[0].name | lowercase | removeWhiteSpace}}.png" class="icon {{trait_tuple.value[2]}}">
+						<p class="contador">{{trait_tuple.value[1]}}/{{trait_tuple.value[0].sets[trait_tuple.value[0].sets.length -1].min}}</p>
+					</div>	
+				</li>	
+			</ul>
+			<div id=hovertrait>{{trait_over_description}}</div>
+		</div>
+		<div class="MaxSelect" *ngIf="selected.length==9">
+				!Tu equipo está lleno! Toca un campeón para retirarlo de tu equipo			
+		</div>
+	</div>
+</div>

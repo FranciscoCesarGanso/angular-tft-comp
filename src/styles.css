@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+*{
+	color:#DCD6E4;
+	font-family: "sofia-pro",sans-serif;
+}
+body{
+   
+   background: url("assets/img_common/fondo.jpg") no-repeat center center fixed;
+	/*background:#264653;*/
+	
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+h2{ 
+	text-align: center;
+	font-size: 24px;
+}
+h2:after {
+    content: "";
+    width: px;
+    height: 2px;
+    margin-top: 7px;
+    display: block;
+    background-color: #2D3063;
+}
+

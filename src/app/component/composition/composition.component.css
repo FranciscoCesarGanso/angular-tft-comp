@@ -1,0 +1,122 @@
+
+.champ_list{
+	float: left;
+	width: 40%;
+	margin :5px;
+	
+}
+.champ_selection{
+	float: right;;
+	width: 40%;
+	background: #68A3D3;
+	border-radius: 25px;
+}
+.champ_show{
+	margin:10px; 
+	padding-top: 3px;
+	padding-bottom: 3px;
+	border-radius: 25px;
+	background: #68A3D3;
+}
+.traits_show{
+	display: block;
+	 text-align: center;
+}
+
+.contador{
+	font-size: 16px;
+}
+.MaxSelect {
+	font-size: 24px;
+	text-align: center;
+	color: #FC100D;
+	padding: 20px;
+}
+#hovertrait{
+	font-size: 25px;
+	
+	background:  #68A3D3;
+	border-style: solid 50px;
+	border-color: coral;
+	position: absolute;
+}	
+ul li{
+	display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+ul li div{
+
+	display: inline-block;
+	margin: 5px;
+
+}
+ul li div p{
+	padding: 0
+}
+
+.icon{
+	width: 30px !important;
+	height: 30px !important;
+} 
+.default_icon{
+
+}
+.bronze_icon{
+	filter:sepia(92%) saturate(200%) hue-rotate(325deg) brightness(60%) contrast(90%);
+}
+.silver_icon{
+	filter:sepia()  grayscale(1);
+}
+.gold_icon{
+	filter:sepia() saturate(1000%) hue-rotate(0deg);
+}
+.chromatic_icon{
+	filter: sepia() saturate(100%) invert() contrast(90%);
+}
+.champ_show{
+	cursor: pointer;	
+}
+.border_gray{
+	margin:3px;
+	border-style: ridge;
+	border-color:gray;
+	border-width: 3px;
+	padding: 2px;
+}
+.border_green{
+	margin:3px;
+	border-style: ridge;
+	border-color:green;
+	border-width: 3px;
+	padding: 2px;
+}
+.border_blue{
+	margin:3px;
+	border-style: ridge;
+	border-color:blue;
+	border-width: 3px;
+	padding: 2px;
+}
+.border_purple{
+	margin:3px;
+	border-style: ridge;
+	border-color:purple;
+	border-width: 3px;
+	padding: 2px;
+}
+.border_gold{
+	margin:3px;
+	border-style: ridge;
+	border-color:#FFD700;
+	border-width: 3px;
+	padding: 2px;
+}
+
+
+
+
+
+

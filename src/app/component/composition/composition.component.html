@@ -3,7 +3,7 @@
 		<div class="champ_show" *ngFor ="let item of [1,2,3,4,5]">
 			<h2>Rango {{item}}</h2>	
 			<ul>
-				<li *ngFor="let champ of getSubArrayCost(champions,item)" ><img   src="assets/champions/{{champ.championId}}.png" (click)="selectedChamp(champ)" [ngClass]="{'border_gray':item===1,'border_green':item===2,'border_blue':item===3,'border_purple':item===4,'border_gold':item===5}"></li>
+				<li *ngFor="let champ of getSubArrayCost(champions,item)" ><img   src="assets/champions/{{champ.championId}}.png" (click)="selectedChamp(champ)" class="icon" [ngClass]="{'border_gray':item===1,'border_green':item===2,'border_blue':item===3,'border_purple':item===4,'border_gold':item===5}"></li>
 			</ul>
 		</div>
 		
@@ -12,7 +12,7 @@
 		<div class="show_selection">
 			<h2>Equipo</h2>
 			<ul *ngIf="selected">
-				<li *ngFor="let champ_selected of selected"> <img src="assets/champions/{{champ_selected.championId}}.png" [ngClass]="{'border_gray':champ_selected.cost===1,'border_green':champ_selected.cost===2,'border_blue':champ_selected.cost===3,'border_purple':champ_selected.cost===4,'border_gold':champ_selected.cost===5}" (click)="deselectedChamp(champ_selected)"></li>
+				<li *ngFor="let champ_selected of selected"> <img src="assets/champions/{{champ_selected.championId}}.png" class="icon" [ngClass]="{'border_gray':champ_selected.cost===1,'border_green':champ_selected.cost===2,'border_blue':champ_selected.cost===3,'border_purple':champ_selected.cost===4,'border_gold':champ_selected.cost===5}" (click)="deselectedChamp(champ_selected)"></li>
 			</ul>
 		</div>
 		<div *ngIf="selected" class="show_traits_selected">

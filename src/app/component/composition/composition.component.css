@@ -1,7 +1,7 @@
 
 .champ_list{
 	float: left;
-	width: 40%;
+	width: 30%;
 	margin :5px;
 	
 }
@@ -12,7 +12,7 @@
 	border-radius: 25px;
 }
 .champ_show{
-	margin:10px; 
+	margin:5px; 
 	padding-top: 3px;
 	padding-bottom: 3px;
 	border-radius: 25px;
@@ -30,7 +30,7 @@
 	font-size: 24px;
 	text-align: center;
 	color: #FC100D;
-	padding: 20px;
+	padding: 5px;
 }
 #hovertrait{
 	font-size: 25px;
